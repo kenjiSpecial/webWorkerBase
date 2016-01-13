@@ -26,7 +26,7 @@ function loop(){
     var now = Date.now();
     var ratio = (now - lastSnapshotReceivedAt) / 1000 / config.PHYSICS_HZ;
     var particles = particleMan.all();
-    //console.log(particles);
+    console.log(mm._buffer.length);
     ctx.fillStyle = '#000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     particles.forEach(function(particle, index){
@@ -50,10 +50,11 @@ function message(msg){
         })
 
         lastSnapshotReceivedAt = Date.now();
+        return true;
     }
 
     if(msg.type = 'physics:timing'){
-
+        return true;
     }
 }
 

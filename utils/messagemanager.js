@@ -43,7 +43,6 @@ MessageManager.prototype.read = function(cb) {
             total += 1;
         }
     }
-
     // Swap the arrays to prevent allocations.
     var oldBuffer = this._buffer;
     this._buffer = this._unreceived;
