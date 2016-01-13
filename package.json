@@ -1,0 +1,11 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "webworkify": "^1.1.0"
+  },
+  "devDependencies": {
+    "gamma": "^1.0.0",
+    "raf": "^3.1.0"
+  }
+}
